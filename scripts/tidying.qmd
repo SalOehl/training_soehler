@@ -220,4 +220,9 @@ mean_region <- catch_original %>%
   
 head(mean_region)
 ```
+# write csv
+
+```{r}
+write_csv(mean_region, here::here("data/mean_catch_by_region.csv"))
+```
 
