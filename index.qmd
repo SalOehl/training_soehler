@@ -9,6 +9,7 @@ editor: visual
 - [Intro to quarto](intro-quarto.html)
 - Intro to git
 - Cleaning and Wrangling
+- [Vizualizing](scripts/viz-intro.html)
  
 ## Practise sessions
 
