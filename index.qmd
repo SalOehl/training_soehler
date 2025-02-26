@@ -4,5 +4,14 @@ format: html
 editor: visual
 ---
 
-Hello world
+## Course lessons
+
+- [Intro to quarto](intro-quarto.html)
+- Intro to git
+- Cleaning and Wrangling
+ 
+## Practise sessions
+
+- practise 1
+- practise 2
 
