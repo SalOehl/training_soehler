@@ -83,3 +83,43 @@ ggplot(annual_esc_2000s, aes(year, escapement, color = species)) +
   
 ```
 
+## Interactive visualization
+
+### DT
+
+```{r}
+library(DT)
+```
+```{r}
+locations <- escape %>% 
+  distinct(location, latitude, longitude) %>% 
+  drop_na()
+```
+
+```{r}
+datatable(locations)
+```
+
+
+### leaflet
+
+```{r}
+library(leaflet)
+```
+
+```{r}
+leaflet(locations) %>% 
+  addTiles() %>% #adds by default openstreetmap
+  addMarkers(
+    lng = ~ longitude,
+    lat = ~ latitude,
+    popup = ~ location
+  )
+```
+
+
+
+
+
+
+
